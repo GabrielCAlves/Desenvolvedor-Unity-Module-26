@@ -70,7 +70,7 @@ namespace Screens
             {
                 var obj = listOfObjects[i];
                 obj.gameObject.SetActive(true);
-                obj.DOScale(1f, animationDuration).From(0).SetDelay(i * delayBetweenObjects);
+                obj.DOScale(1.5f, animationDuration).From(0).SetDelay(i * delayBetweenObjects);
             }
 
             Invoke(nameof(StartType), delayBetweenObjects * listOfObjects.Count);
